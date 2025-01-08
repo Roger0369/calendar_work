@@ -13,27 +13,20 @@
       .calendar-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 20px;
-      }
-      @media (max-width: 768px) {
-        .calendar-container {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-      @media (max-width: 480px) {
-        .calendar-container {
-          grid-template-columns: 1fr;
-        }
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+        padding: 10px;
       }
       .month {
         border: 1px solid #ccc;
         border-radius: 10px;
-        padding: 10px;
+        padding: 5px;
+        font-size: 0.8em;
       }
       .month h3 {
         text-align: center;
-        margin: 0 0 10px;
+        margin: 0 0 5px;
+        font-size: 1em;
       }
       .days {
         display: grid;
@@ -41,7 +34,7 @@
         text-align: center;
       }
       .days div {
-        padding: 5px;
+        padding: 2px;
       }
       .header {
         font-weight: bold;
@@ -65,8 +58,9 @@
       .legend {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 10px;
         padding: 10px;
+        font-size: 0.8em;
       }
       .legend div {
         display: flex;
@@ -74,15 +68,15 @@
         gap: 5px;
       }
       .legend div span {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         display: inline-block;
         border: 1px solid #ccc;
       }
     </style>
   </head>
   <body>
-    <h1 style="text-align: center">Work Schedule 2025</h1>
+    <h1 style="text-align: center; font-size: 1.5em">Work Schedule 2025</h1>
     <div class="legend">
       <div><span style="background-color: #d4edda"></span> Morning Shift</div>
       <div><span style="background-color: #cce5ff"></span> Night Shift</div>
